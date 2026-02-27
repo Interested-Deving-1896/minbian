@@ -2,7 +2,7 @@
 # main.sh
 
 # Current version
-mbv="v1.2.1"
+mbv="v1.2.2"
 
 echo "
 ------------------------------------------------------
@@ -73,7 +73,7 @@ echo ""
 
 read -p "Will you need to edit code/text files? (y/n): " dev_choice
 while [[ ! "$dev_choice" =~ ^[yYnN]$ ]]; do
-    read -p "Please, answer with 'y' o 'n': " dev_choice
+    read -p "Please, answer with 'y' or 'n': " dev_choice
 done
 dev=$([[ "$dev_choice" =~ ^[yY]$ ]] && echo "true" || echo "false")
 
@@ -82,7 +82,7 @@ if "$dev"; then
 
     read -p "Are you a software or web developer? (y/n): " sub_choice
     while [[ ! "$sub_choice" =~ ^[yYnN]$ ]]; do
-        read -p "Please, answer with 'y' o 'n': " sub_choice
+        read -p "Please, answer with 'y' or 'n': " sub_choice
     done
     subl=$([[ "$sub_choice" =~ ^[yY]$ ]] && echo "true" || echo "false")
 fi
@@ -92,7 +92,7 @@ if [ "$x86" = "false" ]; then
     echo ""
     read -p "Will you require an office suite? (y/n): " office_choice
     while [[ ! "$office_choice" =~ ^[yYnN]$ ]]; do
-        read -p "Please, answer with 'y' o 'n': " office_choice
+        read -p "Please, answer with 'y' or 'n': " office_choice
     done
     office=$([[ "$office_choice" =~ ^[yY]$ ]] && echo "true" || echo "false")
 fi
@@ -101,7 +101,7 @@ echo ""
 
 read -p "Will you require design software? (y/n): " design_choice
 while [[ ! "$design_choice" =~ ^[yYnN]$ ]]; do
-    read -p "Please, answer with 'y' o 'n': " design_choice
+    read -p "Please, answer with 'y' or 'n': " design_choice
 done
 design=$([[ "$design_choice" =~ ^[yY]$ ]] && echo "true" || echo "false")
 

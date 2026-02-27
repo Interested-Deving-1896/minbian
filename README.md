@@ -1,10 +1,10 @@
 # Minbian
 
-Minbian is a free and open-source installation script written in Bash for setting up a minimal desktop setup on Debian GNU/Linux (and derivatives), automating the process and oriented to: developers, users with low-end hardware, or anybody willing to avoid bloatware (without losing usability). It lets you choose what to install based on input, apart from some ready tools. You can get nice and solid setups up and running within minutes: from just a DE and browser on a netbook, to an office-oriented workstation, and even a full development environment.
+Minbian is a free and open-source installation script written in Bash for setting up a minimal desktop setup on Debian GNU/Linux (and derivatives), automating the process and oriented to: developers, users with low-end hardware, or anybody willing to avoid bloatware (without losing usability). Get your setup running within minutes: from just a DE and browser on a netbook, to a full development workstation.
 
 ## The name
 
-"Minbian" setups are called this way since their goal is not to create "yet another Debian fork" but a minimal setup that is flexible, fast and secure. The project's got a namesake pet on the logo showing a snow fox pup (or a wolf, whatever you think it is) with the Debian emblem on the eye. Minbian represents how small yet powerful the Debian experience can be.
+"Minbian" setups are called this way since their goal is not to create "yet another Debian fork" but a minimal setup that is flexible, fast and secure. Minbian represents how small yet powerful the Debian experience can be.
 
 ## Distributions
 
@@ -12,27 +12,29 @@ Minbian will work perfectly on:
 
 - Debian (from version 12)
 - Devuan (from version 5)
-- AntiX (Core & Net editions)
+
+Minbian also helps you set up:
+
+- AntiX (Core & Net edition)
 - Sparky Linux (MinimalCLI)
 
 Minbian is not oriented to:
 
-- Ubuntu, Pop! OS, and forced GUI distros.
+- GUI-by-default distros (Ubuntu, Mint, etc)
 
 Minbian can be adapted (by code editing) to:
 
-- Arch Linux (and minimal derivatives)
-- OpenSUSE ("Server Role" install mode)
-- Fedora Linux (Core edition)
+- Arch Linux (and some derivatives)
+- OpenSUSE ("Server Role" mode)
 
 ## Usage
 
-After installing the base system, you download and run the script, answer yes or no (y/n) a couple times, and let Minbian add everything you'll need automatically. No bloatware, no ricing, no tracking involved.
+After installing the base system, you download the script, run it, answer yes or no (y/n) a couple times and let it work. There's no bloatware, no ricing, nor tracking involved.
 
 - Boot from an USB or ISO image and install the base system
 - Select your time zone, language and package management repos
-- Uncheck all the desktop environments, but keep "system utilities"
-- Finish the installation, reboot, select your system, and login
+- Uncheck all the desktop environments, keep "system utilities"
+- Finish the installation, reboot, and login to your system
 
 ### Next Steps
 
@@ -43,7 +45,7 @@ apt install sudo
 sudo usermod -aG sudo your_name
 ```
 
-- [ ] Switch user as root to continue
+- [ ] Switch user to your username
 
 ```
 su your_name
