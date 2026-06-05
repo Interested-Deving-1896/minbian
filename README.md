@@ -1,33 +1,29 @@
-# Minbian
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# minbian
 
-Minbian is a free and open-source installation script written in Bash for setting up a minimal desktop setup on Debian GNU/Linux (and derivatives), automating the process and oriented to: developers, users with low-end hardware, or anybody willing to avoid bloatware (without losing usability). Get your setup running within minutes: from just a DE and browser on a netbook, to a full development workstation.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/minbian)
 
-## The name
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-"Minbian" setups are called this way since their goal is not to create "yet another Debian fork" but a minimal setup that is flexible, fast and secure. Minbian represents how small yet powerful the Debian experience can be.
+## Architecture
 
-## Distributions
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-Minbian will work perfectly on:
+## Install
 
-- Debian (from version 12)
-- Devuan (from version 5)
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-Minbian also helps you set up:
-
-- AntiX (Core & Net edition)
-- Sparky Linux (MinimalCLI)
-
-Minbian is not oriented to:
-
-- GUI-by-default distros (Ubuntu, Mint, etc)
-
-Minbian can be adapted (by code editing) to:
-
-- Arch Linux (and some derivatives)
-- OpenSUSE ("Server Role" mode)
+```bash
+git clone https://github.com/Interested-Deving-1896/minbian.git
+cd minbian
+```
 
 ## Usage
+
 
 After installing the base system, you download the script, run it, answer yes or no (y/n) a couple times and let it work. There's no bloatware, no ricing, nor tracking involved.
 
@@ -73,81 +69,50 @@ Do you need a code editor? (y/n)
 
 - [ ] Let it finish, then reboot your PC.
 
-## Requirements
+## Configuration
 
-### Hardware
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-- Minimum CPU: 1 core at 1.6 Ghz, and 512 Kb of cache memory
-- Minimum RAM: at least 2 Gb (for 32-bit) or 4 Gb (for 64-bit)
-- Mimimum Storage: at least 16 Gb for the root partition
-- Swap partition: 2 Gb for users with 4 Gb (or less) of RAM
+## CI
 
-##### Note
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-Minbian works on x86 and x64 architectures, but you need to select the right ISO image. It's been tested on both new and (very) old hardware. On ARM64 and other processors it should work, but testing hasn't been performed yet.
+## Mirror chain
 
-## Screenshots
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/minbian`](https://github.com/Interested-Deving-1896/minbian) and mirrored through:
 
-### Overview
+```
+Interested-Deving-1896/minbian  ──►  OpenOS-Project-OSP/minbian  ──►  OpenOS-Project-Ecosystem-OOC/minbian
+```
 
-![Minbian neofetch overview](./screenshots/overview-1.png)
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-### Look & Feel
+## Contributors
 
-![Minbian desktop overview](./screenshots/overview-2.png)
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-![Minbian desktop overview](./screenshots/look-feel-1.png)
+## Origins
 
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-### Development
+## Resources
 
-![Minbian desktop overview](./screenshots/development-2.png)
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-![Minbian desktop overview](./screenshots/development-1.png)
+## License
 
-### Other Apps
-
-![Minbian desktop overview](./screenshots/other-apps-2.png)
-
-![Minbian desktop overview](./screenshots/other-apps-1.png)
-
-## Software Included
-
-### Crucial Packages
-
-- Display Server by X.Org
-- Firewall Manager (UFW)
-- System monitoring tools
-- System daemons & commands
-
-### Default Desktop
-
-- Login Manager (LightDM)
-- Desktop Environment (Xfce)
-- APT modern CLI front-end (Nala)
-- Terminal emulator (MATE Terminal)
-- Audio, location, & more plugins
-- Files explorer/manager (Thunar)
-- System fonts for compatibility
-- A light calculator (Galculator)
-- Images, videos, & PDF viewers
-- Screenshoots tool (by Xfce)
-- A music player (Rhythmbox)
-- FOSS web browser (Firefox)
-
-### Optional Packages
-
-- Bluetooth drivers and utilities
-- A minimal code/text editor (Pluma)
-- Development software (Sublime Text)
-- The LibreOffice suite (x64 only)
-- Design software (Inkscape, GIMP)
-
-### Additional
-
-- 2 wallpaper options in folder
-
-## Recommendations
-
-- Check the specifications of your computer before installing this setup, they provide useful information to get the best installation experience, and some steps rely on that.
-- If the setup you're looking for is meant to play specific videogames or performing complex activities this might not cover out of the box, verify using Minbian is right for you.
+<!-- AI:start:license -->
+[GPL-3.0](https://github.com/Interested-Deving-1896/minbian/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
